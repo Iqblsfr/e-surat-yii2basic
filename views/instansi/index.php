@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\InstansiSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Instansis';
+$this->title = 'Instansi';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="instansi-index">
