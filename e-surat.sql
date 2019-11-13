@@ -245,7 +245,7 @@ CREATE TABLE `sifat` (
 --
 
 INSERT INTO `sifat` (`id`, `nama`) VALUES
-(1, 'Surat Resmi');
+(2, 'Surat Resmi');
 
 -- --------------------------------------------------------
 
