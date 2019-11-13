@@ -1408,3 +1408,1559 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1573411929.898
     'REQUEST_TIME' => 1573411929
 ]
+2019-11-12 08:45:13 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'surat'' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php:698
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php(698): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php(624): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php(1015): yii\db\Connection->open()
+#3 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php(1002): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare('<span class="ke...')
+#6 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Command.php(442): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\mysql\Schema.php(114): yii\db\Command->queryColumn()
+#8 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Schema.php(236): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(171): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\components\ActiveField.php(46): call_user_func(Object(Closure))
+#12 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\BaseObject->__construct('[<span class="s...')
+#14 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\BaseYii.php(351): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\widgets\ActiveForm.php(335): yii\BaseYii::createObject('[<span class="s...')
+#18 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\views\default\view.php(44): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#23 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(72): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'surat'' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php:635
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php(1015): yii\db\Connection->open()
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php(1002): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare('<span class="ke...')
+#4 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Command.php(442): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\mysql\Schema.php(114): yii\db\Command->queryColumn()
+#6 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Schema.php(236): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(171): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\components\ActiveField.php(46): call_user_func(Object(Closure))
+#10 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\BaseObject->__construct('[<span class="s...')
+#12 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\BaseYii.php(351): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\widgets\ActiveForm.php(335): yii\BaseYii::createObject('[<span class="s...')
+#16 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\views\default\view.php(44): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(72): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2019-11-12 08:45:07 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_REFERER' => 'http://localhost/pens/e-surat-yii2basic/web/gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '56317'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/gii/model'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573544707.031
+    'REQUEST_TIME' => 1573544707
+]
+2019-11-12 09:11:12 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php:698
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-11-12 09:10:46 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_REFERER' => 'http://localhost/pens/e-surat-yii2basic/web/gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '56530'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/gii/model'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573546237.065
+    'REQUEST_TIME' => 1573546237
+]
+2019-11-12 09:13:55 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'surat'' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php:698
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php(698): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php(624): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php(1015): yii\db\Connection->open()
+#3 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php(1002): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare('<span class="ke...')
+#6 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Command.php(442): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\mysql\Schema.php(114): yii\db\Command->queryColumn()
+#8 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Schema.php(236): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(171): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\components\ActiveField.php(46): call_user_func(Object(Closure))
+#12 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\BaseObject->__construct('[<span class="s...')
+#14 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\BaseYii.php(351): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\widgets\ActiveForm.php(335): yii\BaseYii::createObject('[<span class="s...')
+#18 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\views\default\view.php(44): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#23 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(72): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'surat'' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php:635
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php(1015): yii\db\Connection->open()
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Connection.php(1002): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare('<span class="ke...')
+#4 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Command.php(442): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\mysql\Schema.php(114): yii\db\Command->queryColumn()
+#6 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\db\Schema.php(236): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(171): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\components\ActiveField.php(46): call_user_func(Object(Closure))
+#10 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\BaseObject->__construct('[<span class="s...')
+#12 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\BaseYii.php(351): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\widgets\ActiveForm.php(335): yii\BaseYii::createObject('[<span class="s...')
+#16 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\views\default\view.php(44): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(72): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2019-11-12 09:13:51 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_REFERER' => 'http://localhost/pens/e-surat-yii2basic/web/gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '56550'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/gii/model'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573546430.59
+    'REQUEST_TIME' => 1573546430
+]
+2019-11-12 16:33:04 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Jabatan".' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('Jabatan', Array)
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-11-12 16:33:03 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'fudohi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '58017'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/Jabatan'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/Jabatan'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573572783.829
+    'REQUEST_TIME' => 1573572783
+]
+2019-11-12 16:38:48 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Code generator not found: JabatanUsers' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php:141
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(51): yii\gii\controllers\DefaultController->loadGenerator('JabatanUsers')
+#1 [internal function]: yii\gii\controllers\DefaultController->actionView('JabatanUsers')
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#5 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#6 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2019-11-12 16:38:48 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = [
+    'id' => 'JabatanUsers'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'fudohi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '58076'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/gii/JabatanUsers'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/gii/JabatanUsers'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573573128.586
+    'REQUEST_TIME' => 1573573128
+]
+2019-11-12 16:38:55 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Code generator not found: jabatanUsers' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php:141
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(51): yii\gii\controllers\DefaultController->loadGenerator('jabatanUsers')
+#1 [internal function]: yii\gii\controllers\DefaultController->actionView('jabatanUsers')
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#5 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#6 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2019-11-12 16:38:55 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = [
+    'id' => 'jabatanUsers'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'fudohi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '58078'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/gii/jabatanUsers'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/gii/jabatanUsers'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573573135.291
+    'REQUEST_TIME' => 1573573135
+]
+2019-11-12 16:39:01 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Code generator not found: jabatanusers' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php:141
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(51): yii\gii\controllers\DefaultController->loadGenerator('jabatanusers')
+#1 [internal function]: yii\gii\controllers\DefaultController->actionView('jabatanusers')
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#5 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#6 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2019-11-12 16:39:01 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = [
+    'id' => 'jabatanusers'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'fudohi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '58081'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/gii/jabatanusers'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/gii/jabatanusers'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573573141.358
+    'REQUEST_TIME' => 1573573141
+]
+2019-11-12 16:39:22 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "JabatanUsers".' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('JabatanUsers', Array)
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-11-12 16:39:22 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'fudohi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '58085'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/JabatanUsers'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/JabatanUsers'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573573162.821
+    'REQUEST_TIME' => 1573573162
+]
+2019-11-12 16:39:30 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "jabatanUsers".' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('jabatanUsers', Array)
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-11-12 16:39:30 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'fudohi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '58088'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/jabatanUsers'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/jabatanUsers'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573573170.094
+    'REQUEST_TIME' => 1573573170
+]
+2019-11-12 16:39:36 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "jabatanusers".' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('jabatanusers', Array)
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-11-12 16:39:36 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'fudohi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '58089'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/jabatanusers'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/jabatanusers'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573573176.443
+    'REQUEST_TIME' => 1573573176
+]
+2019-11-12 17:46:39 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Kategori_surat".' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('Kategori_surat', Array)
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-11-12 17:46:38 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'fudohi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '58474'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/Kategori_surat'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/Kategori_surat'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573577198.643
+    'REQUEST_TIME' => 1573577198
+]
+2019-11-12 17:46:48 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "KategoriSurat".' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('KategoriSurat', Array)
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-11-12 17:46:48 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'fudohi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '58476'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/KategoriSurat'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/KategoriSurat'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573577208.166
+    'REQUEST_TIME' => 1573577208
+]
+2019-11-12 17:56:15 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "surat-eluar".' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('surat-eluar', Array)
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-11-12 17:56:15 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'fudohi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '58603'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/surat-eluar'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/surat-eluar'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573577775.592
+    'REQUEST_TIME' => 1573577775
+]
+2019-11-12 18:00:06 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "surat-masuk".' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('surat-masuk', Array)
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-11-12 18:00:06 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'fudohi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '58637'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/surat-masuk'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/surat-masuk'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573578006.619
+    'REQUEST_TIME' => 1573578006
+]
+2019-11-12 18:08:57 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: users/approval-rules-node' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('approval-rules-...', Array)
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('users/approval-...', Array)
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-11-12 18:08:57 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'fudohi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '58742'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/users/approval-rules-node'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/users/approval-rules-node'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573578537.363
+    'REQUEST_TIME' => 1573578537
+]
+2019-11-12 18:09:14 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: users/appoval-rules-node' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('appoval-rules-n...', Array)
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('users/appoval-r...', Array)
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-11-12 18:09:12 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'fudohi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '58744'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/users/appoval-rules-node'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/users/appoval-rules-node'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573578552.208
+    'REQUEST_TIME' => 1573578552
+]
+2019-11-12 18:11:21 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "appoval-rules-edge".' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('appoval-rules-e...', Array)
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\pens\e-surat-yii2basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pens\e-surat-yii2basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-11-12 18:11:21 [::1][-][dgv3vupd4h74cdjjq0ddfanrk4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'dgv3vupd4h74cdjjq0ddfanrk4'
+    '_csrf' => 'ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'fudohi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=dgv3vupd4h74cdjjq0ddfanrk4; _csrf=ad7f2566dcaa12f4fc2f943b73e253c86fd3c136cd885f4f345da4a75e78f3c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B2ZQkgBTDhUZDcpgwZH96GLdcwRbWfHh%22%3B%7D'
+    'PATH' => '\"C:\\ProgramData\\Oracle\\Java\\javapath;%JAVA_HOME%bin\";C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\app\\ASUS\\product\\18.0.0\\dbhomeXE\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ASUS\\AppData\\Local\\atom\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pens/e-surat-yii2basic/web/index.php'
+    'REMOTE_PORT' => '58785'
+    'REDIRECT_URL' => 'http://localhost/pens/e-surat-yii2basic/web/appoval-rules-edge'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pens/e-surat-yii2basic/web/appoval-rules-edge'
+    'SCRIPT_NAME' => '/pens/e-surat-yii2basic/web/index.php'
+    'PHP_SELF' => '/pens/e-surat-yii2basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573578681.556
+    'REQUEST_TIME' => 1573578681
+]

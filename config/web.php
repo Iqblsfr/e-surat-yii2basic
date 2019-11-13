@@ -61,6 +61,20 @@ $config = [
 
 if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
+    // ...
+    $config['modules']['gii'] = [
+      'class' => 'yii\gii\Module',
+      'generators' => [
+        'crud' => [
+            'class' => 'yii\gii\generators\crud\Generator',
+            'templates' => [
+                'myCRUD' => '@app/templates/crud/default'
+            ]
+        ]
+      ]
+    ];
+    // ...
+
     $config['bootstrap'][] = 'debug';
     $config['modules']['debug'] = [
         'class' => 'yii\debug\Module',
@@ -74,22 +88,6 @@ if (YII_ENV_DEV) {
         // uncomment the following to add your IP if you are not connecting from localhost.
         //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
-}
-
-if (YII_ENV_DEV) {
-  // ...
-  $config['modules']['gii'] = [
-    'class' => 'yii\gii\Module',
-    'generators' => [
-      'crud' => [
-          'class' => 'yii\gii\generators\crud\Generator',
-          'templates' => [
-              'myCRUD' => '@app/templates/crud/default'
-          ]
-      ]
-    ]
-  ];
-  // ...
 }
 
 return $config;
